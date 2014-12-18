@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
-
-      <header>
-        <h1>Build Canaries</h1>
-        <p>Early warning of project danger</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/build-canaries" class="button fork"><strong>View On GitHub</strong></a>
-      </div><!-- end banner -->
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/build-canaries">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+
       <section>
+        <div id="title">
+          <h1>Build Canaries</h1>
+          <p>Early warning of project danger</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/build-canaries">build-canaries</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <blockquote>
 <p><strong>Noun</strong><br>
 canary in a coal mine</p>
@@ -54,9 +57,7 @@ canary in a coal mine</p>
 
 <p>As teams and projects get bigger and more complicated, there are more chances for build and integration failures. The earlier and clearer these failures are presented to the teams involved the better. You can read more about continuous delivery here, <a href="http://www.thoughtworks.com/continuous-delivery">http://www.thoughtworks.com/continuous-delivery</a></p>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
