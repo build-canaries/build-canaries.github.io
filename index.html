@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Build Canaries
+---
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Build Canaries : Early warning of project danger">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Build Canaries</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/build-canaries">View on GitHub</a>
-
-          <h1 id="project_title">Build Canaries</h1>
-          <h2 id="project_tagline">Early warning of project danger</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <blockquote>
+<blockquote>
 <p><strong>Noun</strong><br>
 canary in a coal mine</p>
 
@@ -48,27 +24,8 @@ canary in a coal mine</p>
 <a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
 
 <p>As teams and projects get bigger and more complicated, there are more chances for build and integration failures. The earlier and clearer these failures are presented to the teams involved the better. You can read more about continuous delivery here, <a href="http://www.thoughtworks.com/continuous-delivery">http://www.thoughtworks.com/continuous-delivery</a></p>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-57813748-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
-</html>
+<h2>Recent Posts</h2>
+{% for post in site.posts %}
+{{ post.date | date: "%-d %B %Y" }} ::  <a class='post-title' href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
