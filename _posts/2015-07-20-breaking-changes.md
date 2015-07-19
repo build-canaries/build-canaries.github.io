@@ -19,9 +19,10 @@ Two issues came up that made us decide to introduce these breaking changes.
 
 ### [Issue \#95](https://github.com/build-canaries/nevergreen/issues/95)
 
-We found a bug that meant custom AES keys were not being used. Fixing the bug means any trays with passwords being used 
-on [nevergreen.io](http://nevergreen.io) or locally hosted versions of Nevergreen where the user has set a custom key 
-would fail to load. This is because the server would no longer be able to decrypt the password.
+This bug refers to custom AES keys not being used correctly. Fixing it means any trays with passwords 
+on [nevergreen.io](http://nevergreen.io) or local instances, where the user has tried to set a custom key, 
+would fail to load. This is because the server would now correctly pick up the custom key and no longer be able to 
+decrypt the password encrypted by the default key.
 
 ### [Issue \#94](https://github.com/build-canaries/nevergreen/issues/94)
 
