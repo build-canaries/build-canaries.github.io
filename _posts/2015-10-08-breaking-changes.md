@@ -36,5 +36,9 @@ redesign our architecture to make it easier.
 We rewrote the UI to use the [flux](https://facebook.github.io/flux/) architecture pattern and switched to using
 [localForage](https://github.com/mozilla/localForage) for persisting configuration.
 
-The data being saved is very similar to v0.7.0 so we could have added migration code, but at this time we still
-feel adding migrations will complicate future releases too much.
+~~The data being saved is very similar to v0.7.0 so we could have added migration code, but at this time we still
+feel adding migrations will complicate future releases too much.~~
+
+**Update 2016-01-06** - Further changes have been made to what is stored. This means the data stored is now very 
+different than v0.7.0, making migrating much more difficult. This of course doesn't change anything as we didn't plan 
+to migrate, just consider this an FYI.
